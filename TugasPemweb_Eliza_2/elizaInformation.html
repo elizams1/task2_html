@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Menuliskan tag Meta-->
+        <meta charset="utf-8">
+        <meta name="descriptions" content="Information Form Web Kuliner">
+        <meta name="author" content="Eliza-11914002">
+        
+        <!--menghubungkan dengan css-->
+        <link rel="stylesheet" href="./CSS/elizaInformation.css">
+        
+        <!--Menggunakan tag title-->
+        <title>Kuliner Lampung</title>
+
+        <!--menggunakan scripts untuk menampilkan data yang telah diinputkan-->
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            const nama = params.get('nama');
+            const jenisKelamin = params.get('jenisKelamin');
+            const alamat = params.get('alamat')
+            const email = params.get('email');         
+            
+            window.onload = function() {
+                document.getElementById("nama").value = nama;
+                document.getElementById("jenisKelamin").value = jenisKelamin;
+                document.getElementById("alamat").value = alamat;
+                document.getElementById("email").value = email;
+            };
+        </script>
+    </head>
+    <body>        
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Detail Akun</h3>
+            </div>
+            <div class="card-body">
+                <form class="form-pengunjung">
+                    <div class="formContent">
+                        <label for="nama">Nama</label>
+                        <div class="inputan">
+                            <input type="text" name="nama" id="nama" class="form-control" value="nama">
+                        </div>
+                    </div>
+                    <div class="formContent">
+                        <label for="jenisKelamin">Jenis Kelamin</label>
+                        <div class="inputan">
+                            <input type="text" id="jenisKelamin" class="form-control" value="jenisKelamin">                     
+                        </div>
+                    </div>
+                    <div class="formContent">
+                        <label for="alamat">Alamat</label>
+                        <div class="inputan">
+                            <textarea class="form-control" name="Alamat" id="alamat" value="alamat"></textarea>
+                        </div>
+                    </div>
+                    <div class="formContent">
+                        <label for="email">Email</label>
+                        <div class="inputan">
+                            <input type="email" name="email" id="email" class="form-control" value="email">
+                        </div>
+                    </div> 
+                    <div class="reminder">
+                        <p>Apakah sudah sesuai dengan identitasmu?</p>
+                        <p>Jika terjadi kesalahan silahkan kembali ke halaman pendaftaran</p>
+                    </div>
+                </form>
+            </div>
+            <div class="btn">
+                <div class="back-btn">
+                    <a href="elizaForm.html">
+                        Back
+                    </a>
+                </div>
+                <div class="done-btn">
+                    <a href="elizaRegistberhasil.html">
+                        Done
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>

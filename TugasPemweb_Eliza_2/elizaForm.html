@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Menuliskan tag Meta-->
+        <meta charset="utf-8">
+        <meta name="descriptions" content="Form Web Kuliner">
+        <meta name="author" content="Eliza-11914002">
+        
+        <!--menghubungkan dengan css-->
+        <link rel="stylesheet" href="./CSS/elizaForm.css">
+        
+        <!--Menggunakan tag title-->
+        <title>Kuliner Lampung</title>
+             
+    </head>
+    <body>
+        <div class="container">
+            <div class="opening">
+                <h1>WELCOME TO KULEB</h1>
+                <p>Kuliner Lampung Web yang akan memberikan informasi terkait kuliner - kuliner yang berada di Lampung</p>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Data Pengunjung</h3>
+                </div>
+                <div class="card-body">
+                    <form class="form-pengunjung" method="GET" action="elizaInformation.html">
+                        <div class="formContent">
+                            <label for="nama">Nama</label>
+                            <div class="inputan">
+                                <input type="text" name="nama" id="nama" class="form-control" placeholder="Nama Lengkap">
+                            </div>
+                        </div>
+                        <div class="formContent">
+                            <label for="jenisKelamin">Jenis Kelamin</label>
+                            <div class="input-radio">
+                                <div><input type="radio" name="jenisKelamin" id="jenisKelamin" value="Perempuan"> Perempuan</div>
+                                <div><input type="radio" name="jenisKelamin" id="jenisKelamin" value="Laki-laki"> Laki-laki</div>                                                      
+                            </div>
+                        </div>
+                        <div class="formContent">
+                            <label for="alamat">Alamat</label>
+                            <div class="inputan">
+                                <textarea class="form-control" name="alamat" id="alamat" placeholder="Alamat"></textarea>
+                            </div>
+                        </div>
+                        <div class="formContent">
+                            <label for="email">Email</label>
+                            <div class="inputan">
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+                            </div>
+                        </div> 
+                        <div class="button">
+                            <button type="submit" class="btn-submit">Submit</button>
+                        </div>                      
+                    </form>
+                </div>
+            </div>
+        </div>        
+    </body>
+</html>
